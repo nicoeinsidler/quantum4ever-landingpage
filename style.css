@@ -1,0 +1,80 @@
+* {
+    color: black;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+a {
+    color: #C0D3E2;
+    text-decoration: none;
+    border-bottom: 1px dashed #C0D3E2;
+}
+a:hover, a:active {
+    border: none;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-columns: auto 40% 40% auto;
+    grid-template-rows: 150px auto auto;
+    grid-column-gap: 40px;
+    grid-row-gap: 0px;
+    grid-template-areas: 
+        ". . . ."
+        ". . . ."
+        ". left rauch ."
+    ;
+}
+#left {grid-area: left; align-self: center;}
+#rauch {grid-area: rauch;}
+
+#left {
+    text-align: right;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    line-height: 1em;
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+#left p {
+    font-weight: 300;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+
+#links {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+#links li {
+    display: inline-block;
+    width: 120px;
+    margin-left: 20px;
+}
+#links li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    border: none;
+    color: rgba(0,0,0,.4);
+}
+
+
+.icon-videos a:before {content: url("./img/icon-videos.svg");}
+.icon-slides a:before {content: url("./img/icon-slides.svg");}
+.icon-pictures a:before {content: url("./img/icon-pictures.svg");}
