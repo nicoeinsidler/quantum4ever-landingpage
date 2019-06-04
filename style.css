@@ -36,6 +36,57 @@ p a {white-space: nowrap;}
 
 #wrapper {
     display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    grid-template-rows: 80px auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-areas:
+        ". . ."
+        ". left ."
+        ". rauch ."
+    ;
+}
+#rauch {width: 100%;}
+#links, #left {text-align: left;}
+#links li {
+    width: 80px;
+    margin-right: 20px;
+}
+footer img {
+    height: 100px;
+    margin: 0px 20px;
+}
+#tu {width: 100px;}
+#ati {width: calc(100px * 1.8138);}
+
+@media all and (min-width: 900px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr 35% 35% 1fr;
+        grid-template-rows: 100px auto auto;
+        grid-column-gap: 40px;
+        grid-row-gap: 0px;
+        grid-template-areas: 
+            ". . . ."
+            ". . . ."
+            ". left rauch ."
+        ;
+    }
+    #left, #links {text-align: right;}   
+}
+@media all and (min-width: 1400px){
+    #links li {
+        width: 120px;
+        margin-left: 20px;
+    }
+    footer img {height: 180px;}
+    #tu {width: 180px;}
+    #ati {width: calc(180px * 1.8138);}
+    #rauch {width: 80%;}
+}
+/*
+#wrapper {
+    display: grid;
     grid-template-columns: 1fr 35% 35% 1fr;
     grid-template-rows: 100px auto auto;
     grid-column-gap: 40px;
@@ -45,17 +96,15 @@ p a {white-space: nowrap;}
         ". . . ."
         ". left rauch ."
     ;
-}
+
+
+
+}*/
 #left {grid-area: left; align-self: center;}
 #rauch {grid-area: rauch;}
 
-#rauch {
-    width: 80%;
-}
 
-#left {
-    text-align: right;
-}
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -80,13 +129,10 @@ h1 {
     list-style: none;
     margin: 0px;
     padding: 0px;
-    text-align: right;
     font-size: 1.1em;
 }
 #links li {
     display: inline-block;
-    width: 120px;
-    margin-left: 20px;
     margin-bottom: 20px;
 }
 #links li a {
@@ -120,31 +166,18 @@ footer {
     padding-bottom: 80px;
 }
 footer div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-column-gap: 40px;
-    grid-row-gap: 0px;
-    grid-template-areas:
-        "ati tu"
-    ;
+    text-align: center;
     margin-bottom: 40px;
 }
-#tu {grid-area: tu;}
-#ati {grid-area: ati; justify-self: end;}
+
 #logos a, #logo a:hover {
     border:none;
 }
 
 footer img {
-    height: 180px;
+    margin: 0px 20px;
 }
-#tu {width: 180px;}
-#ati {
-    width: calc(180px * 1.8138);
-    position: relative;
-    left: 20px;
-}
+
 
 footer p {
     text-align: center;
