@@ -34,6 +34,19 @@ a:hover, a:active {
 }
 p a {white-space: nowrap;}
 
+a[href=""] {
+    cursor: default;
+}
+a[href=""]:after {
+    content: "\00000a coming soon";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 80px;
+    font-size: 0.8em;
+    font-weight: 800;
+    transform: translate(6px, -80px) rotate(-20deg);
+}
 /* a[href^="http://"]:not([href*="quantum4ever.org"]):after,
 a[href^="https://"]:not([href*="quantum4ever.org"]):after{
     content: " (external link)";
@@ -86,6 +99,9 @@ footer img {
     }
     #left, #links {text-align: right;}   
     #participants {width: 70%;}
+    a[href=""]:after {
+        transform: translate(6px, -90px) rotate(-20deg);
+    }
 }
 @media all and (min-width: 1400px){
     #links li {
@@ -96,6 +112,11 @@ footer img {
     #tu {width: 180px;}
     #ati {width: calc(180px * 1.8138);}
     #rauch {width: 80%;}
+    a[href=""]:after {
+        width: 120px;
+        height: 80px;
+        transform: translate(8px, -100px) rotate(-20deg);
+    }
 }
 #left {grid-area: left; align-self: center;}
 #rauch {grid-area: rauch;}
