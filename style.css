@@ -74,7 +74,7 @@ a[href^="https://"]:not([href*="quantum4ever.org"]):after{
     margin-right: 20px;
 }
 #participants {
-    margin: 140px auto 80px auto;
+    margin: 120px auto 80px auto;
     width: calc(100% - 60px);
 }
 footer img {
