@@ -33,6 +33,13 @@ a:hover, a:active {
     color: black;
 }
 p a {white-space: nowrap;}
+a[href^="http://"]:not([href*="quantum4ever.org"]):after,
+a[href^="https://"]:not([href*="quantum4ever.org"]):after{
+    content: " (external link)";
+    font-size: .5em;
+    letter-spacing: -.001em;
+}
+
 
 #wrapper {
     display: grid;
@@ -51,6 +58,10 @@ p a {white-space: nowrap;}
 #links li {
     width: 80px;
     margin-right: 20px;
+}
+#participants {
+    margin: 140px auto 80px auto;
+    width: calc(100% - 60px);
 }
 footer img {
     height: 100px;
@@ -73,6 +84,7 @@ footer img {
         ;
     }
     #left, #links {text-align: right;}   
+    #participants {width: 70%;}
 }
 @media all and (min-width: 1400px){
     #links li {
@@ -84,26 +96,8 @@ footer img {
     #ati {width: calc(180px * 1.8138);}
     #rauch {width: 80%;}
 }
-/*
-#wrapper {
-    display: grid;
-    grid-template-columns: 1fr 35% 35% 1fr;
-    grid-template-rows: 100px auto auto;
-    grid-column-gap: 40px;
-    grid-row-gap: 0px;
-    grid-template-areas: 
-        ". . . ."
-        ". . . ."
-        ". left rauch ."
-    ;
-
-
-
-}*/
 #left {grid-area: left; align-self: center;}
 #rauch {grid-area: rauch;}
-
-
 
 
 h1 {
@@ -115,6 +109,15 @@ h1 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 300;
+    letter-spacing: -.04em;
+    font-size: 2.5em;
+    line-height: 1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 #left p {
     font-weight: 300;
     letter-spacing: -0.02em;
@@ -122,8 +125,6 @@ h1 {
     margin-top: 10px;
     margin-bottom: 60px;
 }
-
-
 
 #links {
     list-style: none;
@@ -156,6 +157,30 @@ h1 {
 .icon-pictures:hover a:before {content: url("./img/icon-black-pictures.svg");}
 
 
+#participants table {
+    margin: 40px 0px;
+    width: 100%;
+    border-collapse: collapse;
+}
+#participants table tr>th {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 5px 10px;
+    text-align: left;
+    font-weight: 800;
+}
+#participants table tr {
+    padding: 20px 8px;
+}
+#participants table tr:hover {background: rgba(0,0,0,.03);}
+#participants table tr:first-child:hover {background: rgba(0,0,0,0);}
+#participants table tr>td {
+    padding: 5px 10px;
+}
+#participants table tr>td:first-child, #participants table tr>th:first-child {
+    -text-align: right;
+}
+
+
 footer {
     margin-top: 80px;
     padding-top: 40px;
@@ -169,6 +194,14 @@ footer div {
     text-align: center;
     margin-bottom: 40px;
 }
+footer a {
+    color: rgba(255,255,255,.5);
+    border-color: rgba(255,255,255,.5);
+}
+footer a:hover {
+    color: rgba(255,255,255,.2);
+    border-color: rgba(255,255,255,.5);
+}
 
 #logos a, #logo a:hover {
     border:none;
@@ -177,7 +210,6 @@ footer div {
 footer img {
     margin: 0px 20px;
 }
-
 
 footer p {
     text-align: center;
