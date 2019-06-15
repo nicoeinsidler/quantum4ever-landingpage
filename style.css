@@ -37,7 +37,7 @@ p a {white-space: nowrap;}
 a[href=""] {
     cursor: default;
 }
-a[href=""]:after {
+#links a[href=""]:after {
     content: "\00000a coming soon";
     position: absolute;
     display: block;
@@ -99,7 +99,7 @@ footer img {
     }
     #left, #links {text-align: right;}   
     #participants {width: 70%;}
-    a[href=""]:after {
+    #links a[href=""]:after {
         transform: translate(6px, -90px) rotate(-20deg);
     }
 }
@@ -112,7 +112,7 @@ footer img {
     #tu {width: 180px;}
     #ati {width: calc(180px * 1.8138);}
     #rauch {width: 80%;}
-    a[href=""]:after {
+    #links a[href=""]:after {
         width: 120px;
         height: 80px;
         transform: translate(8px, -100px) rotate(-20deg);
