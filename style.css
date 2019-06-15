@@ -33,13 +33,14 @@ a:hover, a:active {
     color: black;
 }
 p a {white-space: nowrap;}
-a[href^="http://"]:not([href*="quantum4ever.org"]):after,
+
+/* a[href^="http://"]:not([href*="quantum4ever.org"]):after,
 a[href^="https://"]:not([href*="quantum4ever.org"]):after{
     content: " (external link)";
     font-size: .5em;
     letter-spacing: -.001em;
 }
-
+ */
 
 #wrapper {
     display: grid;

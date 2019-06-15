@@ -1,0 +1,45 @@
+html {
+  background-color: #F7F7F7 !important;
+  color: inherit;
+}
+
+html {
+  font-size: 16px !important;
+}
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680)) !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 22px !important;
+  }
+}
+
+.thumb-img {
+  box-shadow: none !important;
+  border-color: #000000 !important;
+  border-width: 0.00 !important;
+}
+
+#loupeContainer div.background {
+  background-color: #F7F7F7 !important;
+  color: inherit;
+}
+
+header div.background {
+  background-color: #F7F7F7 !important;
+  color: inherit;
+}
+
+.custom-colorable {
+  fill: #404040 !important;
+}
+
+body {
+  background-color: #F7F7F7 !important;
+  color: #404040 !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 400 !important;
+}
