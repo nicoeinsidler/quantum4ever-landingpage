@@ -205,6 +205,13 @@ h2 {
     -text-align: right;
 }
 
+#participants table td:nth-child(3) a:after {
+    content: " [" attr(href) "]";
+}
+#participants table td:nth-child(3) span {
+    font-size: .7em;
+    color: rgba(0, 0, 0, .4);
+}
 
 footer {
     margin-top: 80px;
