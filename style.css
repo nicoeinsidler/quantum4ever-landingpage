@@ -20,6 +20,9 @@ html {
 body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
+    background-image: url(./img/eps-europe-map.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 a {
