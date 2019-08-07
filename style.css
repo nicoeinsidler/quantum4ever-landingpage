@@ -76,7 +76,7 @@ a[href^="https://"]:not([href*="quantum4ever.org"]):after{
     width: 80px;
     margin-right: 20px;
 }
-#participants {
+#participants, #poster {
     margin: 120px auto 80px auto;
     width: calc(100% - 60px);
 }
@@ -101,7 +101,7 @@ footer img {
         ;
     }
     #left, #links {text-align: right;}   
-    #participants {width: 70%;}
+    #participants, #poster {width: 70%;}
     #links a[href=""]:after {
         transform: translate(6px, -90px) rotate(-20deg);
     }
@@ -182,23 +182,23 @@ h2 {
 .icon-pictures:hover a:before {content: url("./img/icon-black-pictures.svg");}
 
 
-#participants table {
+#participants table, #poster table {
     margin: 40px 0px;
     width: 100%;
     border-collapse: collapse;
 }
-#participants table tr>th {
+#participants table tr>th, #poster table tr>th {
     border-bottom: 1px solid rgba(0,0,0,.1);
     padding: 5px 10px;
     text-align: left;
     font-weight: 800;
 }
-#participants table tr {
+#participants table tr, #poster table tr {
     padding: 20px 8px;
 }
-#participants table tr:hover {background: rgba(0,0,0,.03);}
-#participants table tr:first-child:hover {background: rgba(0,0,0,0);}
-#participants table tr>td {
+#participants table tr:hover, #poster table tr:hover {background: rgba(0,0,0,.03);}
+#participants table tr:first-child:hover, #poster table tr:first-child:hover {background: rgba(0,0,0,0);}
+#participants table tr>td, #poster table tr>td {
     padding: 5px 10px;
     white-space: pre-line;
 }
@@ -206,7 +206,7 @@ h2 {
 /* #participants table td:nth-child(3) a:after {
     content: " [" attr(href) "]";
 } */
-#participants table td:nth-child(3) span {
+#participants table td:nth-child(3) span, #poster table td:nth-child(3) span {
     font-size: .7em;
     color: rgba(0, 0, 0, .4);
 }
