@@ -176,6 +176,7 @@ h2 {
 #links li:hover a:before {opacity: .5;}
 .icon-videos a:before {content: url("./img/icon-black-videos.svg");}
 .icon-slides a:before {content: url("./img/icon-black-slides.svg");}
+.icon-poster a:before {content: url("./img/icon-black-poster.svg");}
 .icon-pictures a:before {content: url("./img/icon-black-pictures.svg");}
 .icon-videos:hover a:before {content: url("./img/icon-black-videos.svg");}
 .icon-slides:hover a:before {content: url("./img/icon-black-slides.svg");}
